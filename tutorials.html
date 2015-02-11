@@ -21,7 +21,7 @@
 </html> 
 -->
 
-<html>
+<html ng-app="myApp">
 <head>
 	<title>Angular Tutorials</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -29,11 +29,13 @@
 	<link rel="stylesheet" href="tutorials.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="angular.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 </head>
 <style>
 	
 </style>
-<body>
+<body class="list-group" ng-controller="TutorialController as tutorials">
 	<nav class="navbar navbar-inverse navbar-fixed-top">
 		<div class="container">
 			 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -72,6 +74,23 @@
  <div class="container">
 	<div class="heading_container">
 
+	  
+	 <div class="row">
+			<div class="col-md-10">			
+				<ul class="list-unstyled">
+					<li ng-repeat="tutorial in tuts.tutorials | filter:query | orderBy: orderProp">
+						<h3>
+							{{tutorial.title}}
+						</h3>
+							<a href="{{tutorial.url}}" target="_blank">{{tutorial.url}}</a> <br>
+							<img src="{{tutorial.image}}"><br>
+							<h6>-{{tutorial.author}}</h6>
+					</li>
+				</ul>
+			</div>
+		</div> 
+	  
+	  
 	  
       <div class="row">
         <div class="col-md-4">
