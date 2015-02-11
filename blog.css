@@ -7,8 +7,9 @@
 .blog-header {
  font-family: Impact;
  color: #0B173B;
-
 }
+
+*{color:#0B173B;}
 
 .screenShot {width: 950px;}
 
