@@ -1,0 +1,98 @@
+<!--<html>
+<head>
+	<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="" ng-controller="tutorialController">
+		<ul>
+			<li ng-repeat="tutorial in tutorials">
+			{{tutorial.url + tutorial.title + tutorial.image + tutorial.author}}
+			</li>
+		</ul>
+	</div>
+
+<script>
+ function tutorialController($scope,$http) {
+    $http.get("tutorials.json").success(function(response){
+	$scope.tutorials = response;});
+}
+</script>
+</body>
+</html> 
+-->
+
+<html>
+<head>
+	<title>Angular Tutorials</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="tutorials.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+	
+</style>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+         
+			</button>
+          
+		 <a class="navbar-brand" href="#">Tutorials</a>
+		 <a class="navbar-brand" href="blog.html">Blog</a>
+		
+		 
+		 <a href="http://arfriz01.github.io"><button style=" margin-top: 10px; float: right;" type="button" class="btn btn-default" aria-label="Right Align">
+			<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+			</button></a>
+	
+			<!--Search Bar-->
+			<div class="col-sm-4" style="margin-top: 10px; float: right;">
+				<div class="input-group">
+				<input type="text" class="form-control" placeholder="Search for...">
+				<span class="input-group-btn">
+				<button class="btn btn-default" type="button">Go!</button>
+				</span>
+				</div>
+			</div>
+ </nav>
+ 
+ <div class="jumbotron">
+	<div class="container">
+		<h1>***</h1>
+		
+		<p>***</p>
+	</div>
+</div>
+ <div class="container">
+	<div class="heading_container">
+
+	  
+      <div class="row">
+        <div class="col-md-4">
+          <h2></h2>
+          <p></p>
+          
+        </div>
+        <div class="col-md-4">
+          <h2></h2>
+          <p></p>
+          
+       </div>
+        <div class="col-md-4">
+          <h2></h2>
+          <p></p>
+          
+        </div>
+      </div>
+	</div>
+
+</div>
+</div>
+</body>
+</html>
