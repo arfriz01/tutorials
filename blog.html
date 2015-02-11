@@ -58,7 +58,10 @@
 			  <p>You can also use strings in your expressions. Below is an example of my use 
 			  of expressions while making a tutorials page with Angular.</p>
 			  <img src="expressionExampleTwo.jpg" style="border: 2px solid red; border-radius: 2px;">
+			  <br>
+			  <br>
 			  <p>The expression allowed me to list data in a clean and easy to understand way. The page looks like this:</p>
+			  
 			  <img src="listExp.jpg" style="width:120px height: 120px; border: 2px solid blue; border-radius: 2px;">
             </ol>
             <p></p>
@@ -70,7 +73,17 @@
               <li>The <strong>ng-app directive</strong> defines an AngularJS application.</li>
               <li>The <strong>ng-model directive</strong> binds the value of HTML controls to application data.</li>
             </ul>
-            <p>Numbered list</p>
+			<br>
+			<p>The first section of this block of code creates the app directive. This is saved in the app.js file
+			 and is referenced in your HTML code.</p>
+			<pre><code>(function() {
+  var app = angular.module('myApp', []);
+
+  app.controller('TutorialController', function(){
+    this.tutorials = links;
+  });
+</code></pre>
+			<p>We will talk about the second portion of this code block in a moment.</p>
             <ol>
               <li></li>
               <li></li>
