@@ -1,5 +1,5 @@
 .blog-masthead {
-  background-color: #428bca;
+  background-color: #00BFFF;
   -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
           box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
 }
@@ -13,3 +13,4 @@
 .screenShot {width: 950px;}
 
 .screenList {width: 800px;}
+
