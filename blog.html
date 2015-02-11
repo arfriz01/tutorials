@@ -88,9 +88,15 @@
 			<P>Here is another example:</p>
 			  <img src="appExample.jpg" style="border: 2px solid red; border-radius: 2px;">
 			  <br>
-			  <hr>
+			  <br>
+			  <P>Now for the ng-model directive:</p>
+			  <img src="modelExample.jpg" style="border: 2px solid red; border-radius: 2px;">
+			  <br>
+			  <p>ng-model binds the input fields to the controller properties. We will look at controllers next.
+			  			  <hr>
+			  
 			 <h3>Controllers</h3>
-            <p>Describe controllers here</p>
+            <p>Controllers are objects that control the data of Angular applications.<p>
 			<p>Back to that app.js file we were looking at...<p>
             <pre><code>(function() {
   var app = angular.module('myApp', []);
@@ -99,9 +105,18 @@
     this.tutorials = links;
   });
 </code></pre>
-            
+            <br>
+			<br>
+			<p>The HTML we create that works with our controller:<p>
+			<img src="controllerExample.jpg" style="border: 2px solid red; border-radius: 2px;">
+			  <br>
+			  <br>
+			<p>The name of our controller is <strong>TutorialController</strong>. We will use it to control the data we have about AngularJS tutorials.
+			In this case, we will be outputting the data in a list. We will use the AngularJS elements to list the name, title, author and an image of various 
+			tutorial sites about Angular.<p>
 			<hr>
-			
+			<h3>Wrap Up</h3>
+			<hr>
           </div><!-- /.blog-post -->  
         </div><!-- /.blog-main -->
 
