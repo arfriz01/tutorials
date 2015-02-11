@@ -47,18 +47,23 @@
 		<p>***</p>
 	</div>
 </div>
-	  
 	 <div class="row">
-			<div class="col-md-10">			
+			<div class="col-md-6">			
 				<ul class="list-unstyled">
 					<li ng-repeat="links in links.tutorials | filter:query | orderBy: orderProp">
-						<h3>
-							{{links.title}}
-						</h3>
-							<a href="{{links.url}}" target="_blank">{{links.url}}</a> <br>
-							<img src="{{links.image}}"><br>
-							<h6>-{{links.author}}</h6>
+						<img src="{{links.image}}"><br>
 					</li>
+				</ul>
+			</div>
+			<div class="col-md-8">	
+				<ul class="list-unstyled">
+						<li ng-repeat="links in links.tutorials | filter:query | orderBy: orderProp">
+							<h3>
+								{{links.title}}
+							</h3>
+								<h4>-{{links.author}}</h4>
+								<a href="{{links.url}}" target="_blank">{{links.url}}</a> <br>
+						</li>
 				</ul>
 			</div>
 		</div> 
